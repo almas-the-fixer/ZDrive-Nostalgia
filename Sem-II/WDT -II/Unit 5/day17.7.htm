@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Slide Down TUTORIAL</title>
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("#slider").click(function(){
+		$("#panel").slideDown("fast");
+		});
+	$("#panel").click(function(){
+		$("#slider").slideUp("fast");
+		});
+	});
+</script>
+<style>
+#slider, #panel
+{
+background-color:#aabbcc;
+font-family:Ink Free;
+text-align:center;
+border:3px outset #00ff00;
+font-weight:500;
+}
+#panel
+{
+display:none;
+padding:50px;
+}
+</style>
+</head>
+<body>
+<div id="slider">
+Hello! Click To Slide UP!
+</div>
+<div id="panel">
+This is some text in slided panel!!
+</div>
+</body>
+</html>

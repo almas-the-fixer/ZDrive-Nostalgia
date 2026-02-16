@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-7.1</title>
+</head>
+<body>
+<script>
+function result()
+{
+s1=document.getElementById("s1").value;
+s2=document.getElementById("s2").value;
+s3=document.getElementById("s3").value;
+s4=document.getElementById("s4").value;
+s5=document.getElementById("s5").value;
+s6=document.getElementById("s6").value;
+
+sum=Number(s1)+Number(s2)+Number(s3)+Number(s4)+Number(s5)+Number(s6);
+document.getElementById("total").value=sum;
+
+perc=sum/6;
+
+document.getElementById("per").value=perc;
+
+document.getElementById("per");
+var grade;
+if(perc<40)
+{
+grade="F";
+document.getElementById("rem").value=grade;
+}
+else if(perc>= 40 && perc <=60)
+{
+grade="D";
+document.getElementById("rem").value=grade;
+}
+else if(perc >= 60 && perc <=70)
+{
+grade="C";
+document.getElementById("rem").value=grade;
+}
+else if(perc >= 70 && perc <=80)
+{
+grade="B";
+document.getElementById("rem").value=grade;
+}
+else if(perc >= 80 && perc <=100)
+{
+grade="A";
+document.getElementById("rem").value=grade;
+}
+}
+</script>
+
+Roll no:<input type="text" id="rno"/>
+Student Name:<input type="text" id="name"/>
+<br>
+<br>
+
+
+Marks Scored:
+
+Sub1<input type="text" id="s1"/>
+Sub2<input type="text" id="s2"/>
+Sub3<input type="text" id="s3"/>
+Sub4<input type="text" id="s4"/>
+Sub5<input type="text" id="s5"/>
+Sub6<input type="text" id="s6"/>
+
+<br>
+<br>
+Result:
+
+Total:<input type="text" id="total" />
+Percentage:<input type="text" id="per" />
+Grade:<input type="text" id="rem" />
+
+<input type="button" id="calc" value="Generate" onclick="result();"/>
+<input type="button" id="clear" value="Clear" onclick="Reset();"/>
+<input type="button" id="Exit" value="Exit"/>
+
+</body>
+</html>

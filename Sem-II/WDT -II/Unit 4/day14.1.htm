@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Jquery CSS property</title>
+</head>
+<body>
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+	alert("background color = " + $("p").css("background-color"));
+	});
+	});
+</script>
+</body>
+<p style="background-color:#ff0000">This paragraph has a red bg</p>
+<p style="background-color:#00ff00">This paragraph has a green bg</p>
+<p style="background-color:#0000ff">This paragraph has a blue bg</p>
+<button>Click Here to get css value for 1st paragraph</button>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Day 10.1</title>
+</head>
+<body style="font-family:Comic Sans MS">
+<script>
+//-----------------------------------------------------//
+function setcookie()
+{
+if (document.myform.email.value=="")
+{
+alert("Please Enter Email!!");
+}
+cookievalue = escape(document.myform.email.value);
+document.cookie = "E-MAIL:" + cookievalue;
+document.write("Setting Cookies: "+ "E-Mail: "+cookievalue);
+}
+function readcookie()
+{
+var allcookies = document.cookie;
+cookiearray = allcookies.split(';');
+for (i=0;i<cookiearray.length;i++)
+{
+name = cookiearray[i].split('=')[0];
+value = cookiearray[i].split('=')[1];
+document.getElementById("txtarea").value=("Key is:"+name+"and Value is :"+value);
+}
+}
+//-----------------------------------------------------//
+</script>
+<form name="myform">
+Email:<input type="text" name="email"/>
+<input type="button" value="Set Cookie" onclick="setcookie();"/>
+<br><br>
+<input type="button" value="Get Cookies" onclick="readcookie();"/>
+<textarea rows="8" cols="20" id="txtarea">
+</textarea>
+</form>
+</body>
+</html>

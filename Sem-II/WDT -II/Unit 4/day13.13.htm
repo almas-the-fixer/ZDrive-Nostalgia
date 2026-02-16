@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Day 13 . 10</title>
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+	var a=parseInt($("#number").val());
+	if (a==0)
+	{
+		$("p").text("The number is Zero");
+		$("p").css({"background-color":"Orange"});
+	}
+	else if(a>0)
+	{
+		$("p").text("The number is Positve");
+		$("p").css({"background-color":"Green"});
+	}
+	else
+	{
+		$("p").text("The Number is Negative")
+		$("p").css({"background-color":"Red"})
+	}
+});
+});
+</script>
+</head>
+<body style="font-family:Agency FB">
+Number:<input type="text" id="number" name="input"/>
+<p></p>
+<button>Submit</button>
+</body>
+</html>

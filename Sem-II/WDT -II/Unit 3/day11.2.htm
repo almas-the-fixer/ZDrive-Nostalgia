@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>JSON Example</title>
+</head>
+<body style="font-family:Ink Free;font-weight:200;">
+<script>
+var books= {"pascal" : [
+{ "Name" : "Amit", "Price" : 700 },
+{ "Name" : "Krish", "Price" : 800 }],
+}
+var i=0;
+
+document.writeln("<table border='1' width='100' >");
+document.writeln("<tr><td><b>Name</b></td><td>Price</td></tr>");
+
+for(i=0;i<books.pascal.length;i++)
+{
+document.writeln("<tr>");
+document.writeln("<td><b>"+books.pascal[i].Name+"</b></td>");
+document.writeln("<td><b>"+books.pascal[i].Price+"</b></td>");
+document.writeln("</tr>");
+}
+</script>
+</body>
+</html>

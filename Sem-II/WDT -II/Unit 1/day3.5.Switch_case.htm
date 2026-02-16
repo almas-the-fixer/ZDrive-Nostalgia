@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-3.5 Switch Case in JS</title>
+</head>
+<body>
+<script>
+//---------------------------------------------------//
+choice=prompt("Enter your choice(1to4): ");
+choice=Number(choice);
+switch(choice)
+{
+case 1:
+	document.write("<br>Addition is selected!");
+	a=prompt("Enter First number: ");
+	b=prompt("Enter Second number: ");
+	result=Number(a)+Number(b);
+	document.write("<br>The Addition is: "+result);
+	break;
+case 2:
+	document.write("<br>Subtraction is selected!");
+	a=prompt("Enter First number: ");
+	b=prompt("Enter Second number: ");
+	result=Number(a)-Number(b);
+	document.write("<br>The Subtraction is: "+result);
+	break;
+case 3:
+	document.write("<br>Multiplication is selected!");
+	a=prompt("Enter First number: ");
+	b=prompt("Enter Second number: ");
+	result=Number(a)*Number(b);
+	document.write("<br>The Multiplication is: "+result);
+	break;
+case 4:
+	document.write("<br>Division is selected!");
+	a=prompt("Enter First number: ");
+	b=prompt("Enter Second number: ");
+	result=Number(a)/Number(b);
+	document.write("<br>The Division is: "+result);
+	break;
+default:
+document.write("<br>Error Invalid Choice");
+}
+//---------------------------------------------------//
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Day 11</title>
+</head>
+<body >
+<div id="demo">
+</div>
+<script>
+function cityname()
+{
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function()
+{
+document.getElementById("demo").innerHTML = this.responseText;
+}
+document.getElementById("txtarea").value=xhttp.open("GET","city.txt");
+xhttp.send();
+}
+</script>
+City Will Come Here:<textarea name="txtarea">
+</textarea>
+<input type="button" value="Click ME!!" id="btn" onclick="cityname()"/>
+</body>
+</html>

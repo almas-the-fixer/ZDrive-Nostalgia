@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-4.2</title>
+</head>
+<body>
+<script>
+//---------------------------------------------------//
+myarray=new Array();
+for(i=0;i<=9;i++)
+{
+myarray[i]=prompt("Enter Number: ");
+myarray[i]=Number(myarray[i]);
+}
+temp=myarray[0];
+for(i=0;i<=9;i++)
+{
+if(temp>myarray[i])
+{
+temp=myarray[i];
+}
+}
+document.write("<br>Minimum is: "+temp);
+//---------------------------------------------------//
+</script>
+</body>
+</html>

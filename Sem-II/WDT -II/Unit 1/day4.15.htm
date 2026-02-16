@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-4.4</title>
+</head>
+<body>
+<script>
+//---------------------------------------------------//
+function ArrayMax(){
+myarray=new Array();
+l=prompt("Enter length of array: ");
+l=Number(l);
+for(i=0;i<l;i++)
+{
+myarray[i]=prompt("Enter Array"+i+"Element: ");
+myarray[i]=Number(myarray[i]);
+}
+max=myarray[0];
+for(i=0;i<l;i++)
+{
+if(max<myarray[i])
+{
+max=myarray[i];
+}
+}
+document.write("<br>The Maximum is: "+max);
+}
+ArrayMax();
+//---------------------------------------------------//
+</script>
+</body>
+</html>

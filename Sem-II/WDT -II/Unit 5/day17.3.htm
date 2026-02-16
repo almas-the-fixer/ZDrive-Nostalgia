@@ -1,0 +1,20 @@
+<!DOCTYPE html> 
+ <html> 
+ <head> 
+ <script src="jquery_3.6.min.js"></script> 
+ <script> 
+ $(document).ready(function(){ 
+ $("#h1").mouseenter(function(){ 
+ $( "div" ).text( "Mouse entered on heading" ).show(); 
+ $("#h1").mouseleave(function(){
+ $( "div" ).text( "Bye.........."); 
+ }); 
+ });
+ }); 
+ </script> 
+ </head> 
+ <body> 
+ <h1 id="h1">Enter this heading.</h1> 
+ <div></div> 
+ </body> 
+ </html>

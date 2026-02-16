@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-6.1</title>
+</head>
+<body>
+<script type="text/javascript">
+//---------------------------------------------------//
+function login()
+{
+let uname=document.getElementById("user").value; 
+let password=document.getElementById("pass").value; 
+if(uname==='Almas' && password==='12345')
+{
+alert("Login Sucessfull");
+}
+else
+{
+alert("incorrect username or password");
+}
+}
+//---------------------------------------------------//
+</script>
+<form>
+<table>
+<tr>
+<td>Username:-<input type="text" placeholder="Enter Name" id="user"/></td>
+</tr>
+<tr>
+<td>Password:-<input type="text" placeholder="Enter Password" id="pass"/></td>
+</tr>
+<tr>
+<td><input type="button" onclick="login()" value="Submit"/></td><td><input type="button" value="Reset" onclick="reset();"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

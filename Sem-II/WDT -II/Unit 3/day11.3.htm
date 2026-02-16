@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Day 10.3</title>
+</head>
+<body style="font-family:Comic Sans MS">
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+<script>
+//-----------------------------------------------------//
+function loadDoc()
+{
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function()
+{
+const myObj = JSON.parse(this.responseText);
+
+document.writeln("<table border=1 width=100%");
+document.writeln("<tr>");
+document.writeln("<td>ID<td>");
+document.writeln("<td>Name<td>");
+document.writeln("<td>Sub1<td>");
+document.writeln("<td>Sub2<td>");
+document.writeln("<td>Sub3<td>");
+document.writeln("<td>Total<td>");
+	
+	document.writeln("</tr>");
+	document.writeln("<tr>");
+	
+document.writeln("<td>"+myObj.id+"</td>");
+document.writeln("<td>"+myObj.name+"</td>");
+document.writeln("<td>"+myObj.sub1+"</td>");
+document.writeln("<td>"+myObj.sub2+"</td>");
+document.writeln("<td>"+myObj.sub3+"</td>");
+document.writeln("<td>"+myObj.total+"</td>");
+}
+xhttp.open("GET","student.json");
+xhttp.send();
+}
+//-----------------------------------------------------//
+</script>
+
+</body>
+</html>

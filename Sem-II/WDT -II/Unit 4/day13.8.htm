@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Day 13.6</title>
+</head>
+<script src="jquery_3.6.min.js"></script>
+<script>
+    //-----------------------------------------------------------------------------------------------------------------//
+    function fun() {
+        $(document).ready(function () {
+		$("button").click(function () {
+            $("p").add("span").css({ "background-color": "Yellow" });
+        });
+     }); 
+    //-----------------------------------------------------------------------------------------------------------------//
+</script>
+<body style="font-family:Agency FB" class="main">
+    <div id="grandfather">
+        Grandfather
+        <div id="father">
+            Father
+            <div id="child">
+                <p id="para">1st Paragraph id is para </p>
+                <p id="para">2nd Paragraph id is para</p>
+                <p id="para">3rd Paragraph  id is para</p>
+                <p id="para">4th Paragraph  id is para</p>
+                <p id="para">5th Paragraph  id is para Background of paragraph with id para will change</p>
+                Son
+            </div>
+        </div>
+    </div>
+    <button onclick="fun()">Click me</button>
+	<span>This is Span Element</span>
+	<span>This is another Span Element</span>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+ <html> 
+ <head> 
+ <title>FOCUS DEMO!!!</title>
+ <script src="jquery_3.6.min.js"></script> 
+ <style>
+ span {
+	display:none;
+ }
+ </style>
+ </head> 
+ <body> 
+	<p><input type="text"/><span> Focus Starts....Write Your Name</span></p>
+	<p><input type="text"/><span> Focus Starts....Write Your Password</span></p>
+	<script>
+	$("input").focus(function(){
+		$(this).next("span").css("display","flex").fadeOut(2000);
+		});
+	</script>
+ </body> 
+ </html>

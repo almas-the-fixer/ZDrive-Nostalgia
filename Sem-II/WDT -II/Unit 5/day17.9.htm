@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Slide Down TUTORIAL</title>
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("#slider").click(function(){
+		$("#panel").slideToggle("fast");
+		});
+	});
+</script>
+<script>
+//---------------------------------------------------//
+function login()
+{
+let uname=document.getElementById("user").value; 
+let password=document.getElementById("pass").value; 
+if(uname==='admin' && password==='12345')
+{
+$(function(){
+	$("#result1").text("Login Success");
+	});
+}
+else 
+{
+$(function(){
+	$("#result").text("incorrect username or password");
+	});
+}
+}
+//---------------------------------------------------//
+</script>
+<style>
+#slider, #panel
+{
+background-color:#dacbef;
+font-family:Bradley Hand ITC;
+text-align:center;
+border:3px outset #00ff00;
+font-weight:1000;
+}
+#panel
+{
+display:none;
+padding:50px;
+}
+#user , #pass
+</style>
+</head>
+<body>
+<div id="slider">
+Click Here To Open Login Form
+</div>
+<div id="panel">
+<form>
+<table>
+<tr>
+<td>Username:-<input type="text" placeholder="Enter Name" id="user"/></td>
+</tr>
+<tr>
+<td>Password:-<input type="password" placeholder="Enter Password" id="pass"/></td>
+</tr>
+<tr>
+<td><input type="button" onclick="login()" value="Submit"/></td><td><input type="button" value="Reset" onclick="reset();"/></td>
+</tr>
+<p id="result"></p>
+<p id="result1"></p>
+</table>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>HTML LOGIN FORM</title>
+<script src="jquery_3.6.min.js">
+</script>
+
+</head>
+<body>
+<p id="p1"></p>
+<p id="p2"></p>
+<button>Click Here</button>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$.post("demo.txt",function(data,status) {
+		document.getElementById("p1").innerHTML = data;
+		document.getElementById("p2").innerHTML = "Status: " + status;;
+		});
+		});
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Jquery Toggle Method</title>
+<style>
+.intro
+{
+background-color:lightblue;
+font-family:Pristina;
+font-weight:200;
+}
+.intro1
+{
+border:1px dashed Blue;
+}
+</style>
+</head>
+<body style="background:cornsilk;">
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+	$("p").toggle(250)
+	});
+	});
+</script>
+</body>
+<h1>This is a Heading</h1>
+<p class="intro">This is a Heading</p>
+<p class="intro1">This is a Heading</p>
+<button>Click Here</button>
+<a href="day14.2.htm">Click here to go to next practical</a>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Jquery Toggle Method</title>
+<style>
+.main {
+position:relative;
+background-color:cornsilk;
+}
+.child {
+position:relative;
+background:skyblue
+}
+.child1 {
+position:relative;
+background:lightblue;
+}
+.child2 {
+position:relative;
+background:lightgreen;
+}
+</style>
+</head>
+<body style="background:cornsilk;">
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("#main").hide(250)
+	});
+	$("#hide1").click(function(){
+	$("#child").hide(250)
+	});
+	$("#hide2").click(function(){
+	$("#child1").hide(250)
+	});
+	$("#hide3").click(function(){
+	$("#child2").hide(250)
+	});
+</script>
+</body>
+
+<div id="circle" class="child">
+<img src="circle.png"/>
+<button id="hide1">Hide</button>
+</div>
+<div id="rectangle" class="child1">
+<img src="rectangle.png"/>
+<button id="hide2">Hide</button>
+</div>
+<div id="triangle" class="child2">
+<img src="triangle.png"/>
+<button id="hide3">Hide</button>
+</div>
+
+</html>

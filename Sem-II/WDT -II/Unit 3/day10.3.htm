@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Day 10.3</title>
+</head>
+<body style="font-family:Comic Sans MS">
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+<script>
+//-----------------------------------------------------//
+function loadDoc()
+{
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function()
+{
+document.getElementById("demo").innerHTML = this.responseText;
+}
+xhttp.open("GET","demo.txt");
+xhttp.send();
+}
+//-----------------------------------------------------//
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-7.1</title>
+</head>
+<body>
+<script type="text/Javascript">
+function optionfruit(select)
+{
+var a=select.selectedIndex;
+var fav=select.options[a].value;
+if(a==0)
+{
+alert("Please select a Fruit!!!");
+}
+else
+{
+document.write("Your Favourite Fruit is <b>"+fav+"</b>");
+}
+}
+</script>
+<form>
+List of Fruits:
+<select name="fruit">
+<option value="0">Select a Fruit</option>
+<option value="Mango">Mango🥭</option>
+<option value="Apple">Apple🍎</option>
+<option value="Banana">Banana🍌</option>
+<option value="Strawberry">Strawberry🍓</option>
+<option value="Orange">Orange🍊</option>
+</select>
+<input type="button" value="select" onclick="optionfruit(this.form.fruit);"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-4.7</title>
+</head>
+<body>
+<script>
+//---------------------------------------------------//
+function Add(no1,no2)
+{
+
+c=no1+no2;
+return c;
+}
+function Sub(no1,no2)
+{
+
+
+c=no1-no2;
+return c;
+}
+function Mul(no1,no2)
+{
+
+
+c=no1*no2;
+return c;
+}
+function Div(no1,no2)
+{
+
+
+c=no1/no2;
+return c;
+}
+choice=Number(prompt("Enter Choice 1to4: "));
+switch (choice)
+{
+case 1:
+alert("You Selected Addition!");
+a=parseInt(prompt("Enter A: "));
+b=parseInt(prompt("Enter B: "));
+ans=Add(a,b);
+document.write("Addition is: "+ans);
+break;
+
+case 2:
+alert("You Selected Subtraction!");
+a=parseInt(prompt("Enter A: "));
+b=parseInt(prompt("Enter B: "));
+ans=Sub(a,b);
+document.write("Subtraction is: "+ans);
+break;
+
+case 3:
+alert("You Selected Multiplication!");
+a=parseInt(prompt("Enter A: "));
+b=parseInt(prompt("Enter B: "));
+ans=Mul(a,b);
+document.write("Multiplication is: "+ans);
+break;
+
+case 4:
+alert("You Selected Division!");
+a=parseInt(prompt("Enter A: "));
+b=parseInt(prompt("Enter B: "));
+ans=Div(a,b);
+document.write("Division is: "+ans);
+break;
+
+default:
+alert("Invalid Choice!!");
+}
+//---------------------------------------------------//
+</script>
+</body>
+</html>

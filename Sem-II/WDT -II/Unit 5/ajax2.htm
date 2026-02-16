@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>JQUERY AJAX METHOD</title>
+<script src="jquery_3.6.min.js">
+</script>
+
+</head>
+<body>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+	$.ajax({url: 'demo.json',success: function(data){
+	$("#p1").html(data.name);
+	$("#p1").append("<br>"+data.age);
+	$("#p1").append("<br>"+data.gender);
+	}
+	});
+	});
+	});
+</script>
+<p id="p1"></p>
+<p id="p2"></p>
+<button>Click Here</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Day 13.4</title>
+</head>
+<script src="jquery_3.6.min.js"></script>
+<script>
+//-----------------------------------------------------------------------------------------------------------------//
+function fun()
+{
+$(document).ready(function(){
+$("#para").parentsUntil("#child","#father").css({"font-size":"30px","color":"blue","border":"6px dotted green"});
+});
+}
+//-----------------------------------------------------------------------------------------------------------------//
+</script>
+<body style="font-family:Comic Sans MS" class="main">
+<div id="grandfather">
+Grandfather
+<div id="father">
+Father
+<div id="child">
+<p id="para">Paragraph</p>
+Child
+</div>
+</div>
+</div>
+<button onclick="fun()">Click me</button>
+</body>
+</html>
+

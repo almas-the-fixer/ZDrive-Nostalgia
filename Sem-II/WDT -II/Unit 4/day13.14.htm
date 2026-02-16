@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Day 13 . 10</title>
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+	var s1=parseInt($("#subj1").val());
+	var s2=parseInt($("#subj2").val());
+	var s3=parseInt($("#subj3").val());
+	
+	var total=s1+s2+s3;
+	var perc=(total/3);
+	$("#sum").text(total);
+	$("#per").text(perc);
+	});
+	});
+</script>
+</head>
+<body style="font-family:Agency FB">
+<form>
+<fieldset>
+Name:<input type="text" id="stdname"/><br>
+Roll No:<input type="text" id="rno"/>
+</fieldset>
+<fieldset>
+sub1:<input type="text" id="subj1"/><br>
+sub2:<input type="text" id="subj2"/><br>
+sub3:<input type="text" id="subj3"/><br>
+</fieldset>
+</form>
+<button id="generate">Generate</button>
+<p id="sum"></p>
+<p id="per"></p>
+
+</body>
+</html>

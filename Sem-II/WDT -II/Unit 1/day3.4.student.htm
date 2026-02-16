@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY-3.2</title>
+</head>
+<body>
+<script>
+//---------------------------------------------------//
+name=prompt("Enter Name of Student: ");
+Roll_no=prompt("Enter Roll_no of Student: ");
+Maths=prompt("Enter Marks in Maths: ");
+Science=prompt("Enter Marks in Science : ");
+English=prompt("Enter Marks in English : ");
+Hindi=prompt("Enter Marks in Hindi : ");
+Computer=prompt("Enter Marks in Computer : ");
+Maths=Number(Maths);
+Science=Number(Science);
+English=Number(English);
+Hindi=Number(Hindi);
+Computer=Number(Computer);
+Total=Maths+Science+English+Hindi+Computer;
+Percentage=Total*100/500;
+
+document.write("<br>Student Name: "+name);
+document.write("<br>Roll no: "+Roll_no);
+document.write("<br>Marks in Maths: "+Maths);
+document.write("<br>Marks in Science: "+Science);
+document.write("<br>Marks in English: "+English);
+document.write("<br>Marks in Hindi: "+Hindi);
+document.write("<br>Marks in Computer: "+Computer);
+document.write("<br>Total Marks: "+Computer);
+document.write("<br>Percentage: "+Computer);
+
+if(Percentage<40)
+{
+document.write("<br>Failed!!");
+}
+else if(Percentage>=40 && Percentage<=50)
+{
+document.write("<br>Pass Class");
+}
+else if(Percentage>50 && Percentage<=60)
+{
+document.write("<br>Second Class");
+}
+else if(Percentage>60 && Percentage<=70)
+{
+document.write("<br>First class!");
+}
+else if(Percentage>70 && Percentage<=80)
+{
+document.write("<br>Distinction!!");
+}
+else if(Percentage>80 && Percentage<=100)
+{
+document.write("<br>Honour!!!");
+}
+else
+{
+document.write("<br>Invalid marks");
+}
+//---------------------------------------------------//
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Day 17</title>
+<script src="jquery_3.6.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		
+		$("div").prop("color","#ffffff");
+		$("div").append("The Value of Color Property is: "+ $("div").prop("color"));
+		$("div").removeProp("color");
+		$("div").append("<br>Now the  Value of Color Property is: "+ $("div").prop("color"));
+		});
+	});
+</script>
+</head>
+<body>
+<button>Add or Remove a property</button><br><br>
+<div></div>
+</body>
+</html>
