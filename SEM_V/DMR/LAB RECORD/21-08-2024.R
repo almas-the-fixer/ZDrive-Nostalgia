@@ -1,0 +1,5 @@
+print(airquality)
+barplot(airquality$Ozone,main = "Ozone Concentration in air",xlab = "Ozone lvls",ylab = "Air Quality", col = "Green")
+barplot(airquality$Ozone,main = "Ozone Concentration in air",xlab = "Ozone lvls",ylab = "Air Quality", col = "Green",horiz = TRUE)
+data(airquality)
+hist(airquality$Temp,main = "La Guardia Airport's Temperature Daily",xlab="Temp(Farenheit)",xlim = c(50,125),col="Light Blue",freq = TRUE)

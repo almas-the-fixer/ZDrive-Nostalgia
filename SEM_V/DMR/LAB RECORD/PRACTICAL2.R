@@ -1,0 +1,1 @@
+read.table(file = "my_data.txt",header = FALSE, sep="",fill = TRUE)
