@@ -1,0 +1,13 @@
+*.xlsx
+*.pptx
+
+*.txt
+*.RData
+*.rar
+LARAVEL/
+OS/
+UML/
+*.class
+*.bak
+*.pdf
+*.docx
