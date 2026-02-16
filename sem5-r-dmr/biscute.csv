@@ -1,0 +1,13 @@
+TID,Item1,Item2,Item3,Item4,Item5
+100,Bread,butter,milk,soda,egg
+200,Coke,egg,milk,bread,soda
+300,Bread,butter,egg,milk,
+400,Bread,Coke,jam,,
+500,Bread,butter,bread,,
+600,Potatochip,soda,milk,,
+700,Coke,fruit,juice,,
+800,Bread,Coke,milk,,
+900,Coke,soda,jam,,
+1000,Bread,butter,egg,,
+1100,Bread,milk,,,
+1200,Bread,jam,,,
